@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aziz Al Hadiid</title>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Link CSS home page-->
+    <link rel="stylesheet" href="home.css">
+    <!-- Link For Navbar -->
+    <!-- <link rel="stylesheet" href="Navbar/navbar.css"> -->
+
+    <!-- link For Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Script  Font Awasome-->
+    <script src="https://kit.fontawesome.com/3659f450a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar Star -->
+    <nav>
+        <!-- for mobile -->
+        <ul class="side-bar">
+            <li onclick="hideSidebar()" class="navbar-close"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html" class="nav-mobile">HOME</a></li>
+            <li><a href="about/index.html" class="nav-mobile">ABOUT</a></li>
+            <li><a href="portfolio/index.html" class="nav-mobile">PORTFOLIO</a></li>
+            <li><a href="contac/index.html" class="nav-mobile">CONTCT ME</a></li>
+        </ul>
+        <!-- for dekstop -->
+        <ul>
+            <li><a href="index.html" class="Logo">A.Z.H</a></li>
+            <li><a class="hideOnMobile" href="index.html">HOME</a></li>
+            <li><a class="hideOnMobile" href="about/index.html">ABOUT</a></li>
+            <li><a class="hideOnMobile" href="portfolio/index.html">PORTFOLIO</a></li>
+            <li><a class="hideOnMobile contact-us" href="contac/index.html">CONTACT ME</a></li>
+            <li  class="menu-buttom" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Star Home Page-->
+    <div class="container">
+        <!-- Colum 1 -->
+        <div class="col-1" data-aos="fade-right" data-aos-delay="250" data-aos-duration="2000">
+            <p class="paragraph-1">Hello I'm</p>
+            <h1>FRONT-END WEBSITE</h1>
+            <h2>Aziz AL Hadiid</h2>
+            <p class="paragraph-2">Hallo aku biasa dipanggil aziz atau adid, aku adalah seorang mahasiswa sistem informasi universitas jambi, aku memiliki minat yang besar dalam dunia programing terutama dalam dunia Front-End Web Development</p>
+            <button onclick="goToLink()">My Work</button>
+        </div>
+        <!-- Colum 2 -->
+        <div class="col-2" data-aos="fade-left" data-aos-delay="150" data-aos-duration="2000"> 
+            <img src="img/aziz.jpg" alt="">
+        </div>
+        
+    </div>
+    <!-- End Home Page -->
+
+    <!-- Start Footer -->
+        <footer>
+            <!-- colum1 for footer -->
+            <div class="col-1-footer">
+                <i class="fa-regular fa-copyright"></i>
+                <p>2024-Aziz Al Hadiid</p>
+            </div>
+            <!-- Colum2 for footer -->
+            <div class="col-2-footer">
+                <a href="https://www.instagram.com/alhadiid_aziz?igsh=MWxncnd0bjBuOGt1Mw=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@azizhadiid?_t=8j2qPzcQAdu&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/in/aziz-alhadiid"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/azizhadiid"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </footer>
+    <!-- End Footer -->
+
+    <!-- Script For AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+
+    <!-- Script -->
+    <script src="home.js"></script>
+    <!-- Script for navbar -->
+    <script src="Navbar/navbar.js"></script>
+</body>
+</html>

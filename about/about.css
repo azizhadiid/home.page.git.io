@@ -1,0 +1,1537 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-y: scroll; 
+    min-height: 100vh;
+}
+
+body {
+    min-height: 50vh;
+    background-color: rgb(176, 176, 176);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Start Navbar */
+nav {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(48, 47, 47);
+    font-size: 18px;
+}
+
+nav .hideOnMobile {
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+nav .hideOnMobile:hover{
+    background-color: rgb(48, 47, 47);
+    border-radius: 80px;
+    height: 25px;
+    color: white;
+    border: 2px solid white;
+
+}
+
+nav .contact-us {
+    margin-right: 50px;
+    margin-left: -10px;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    margin-left: 50px;
+}
+
+nav .Logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.side-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.394);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.side-bar li {
+    width: 100%;
+}
+
+.side-bar a {
+    width: 100%;
+}
+
+.side-bar .navbar-close {
+    margin-left: -5px;
+    margin-top: 10px;
+}
+
+.side-bar .nav-mobile {
+    margin-top: 20px;
+}
+
+.side-bar .nav-mobile:hover {
+    color: red;
+}
+
+.menu-buttom {
+    display: none;
+}
+/* End Navbar */
+
+/* Start About Page */
+.container {
+    margin-top: 150px;
+    /* z-index: 10; */
+    /* background-color: aqua; */
+}
+
+.row-1 {
+    text-align: center;
+    font-size: 22.5px;
+    margin-bottom: 80px;
+}
+
+.row-2 {
+    display: flex;
+}
+
+.row-2 .my-self {
+    margin-left: 80px;
+}
+
+.row-2 .my-self h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.row-2 .my-self .baris-my-self {
+    position: relative;
+    /* top: 0%; */
+    bottom: 4%;
+    width: 12%;
+    background-color: black;
+    height: 2.5px;
+    border-radius: 80px;
+    margin-bottom: 10px;
+}
+
+.row-2 .my-self p {
+    width: 600px;
+    opacity: 0.8;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-right: 70px;
+}
+
+.row-2 .my-self .row-in-row-2 {
+    display: flex;
+}
+
+.row-2 .my-self .row-in-row-2 button {
+    height: 50px;
+    width: 150px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(39, 38, 38);
+    text-align: center;
+    margin-right: 38px;
+}
+
+.row-2 .my-self .row-in-row-2 .icon-medsos {
+    text-align: center;
+    width: 20%;
+    padding: 13px;
+    font-size: 20px;
+    /* background-color: blue; */
+}
+
+.row-2 .my-self .row-in-row-2 .icon-medsos a {
+    margin-right: 11px;
+    color: rgb(39, 38, 38);
+}
+
+.row-2 .my-skills {
+    margin-left: 145px;
+}
+
+.row-2 .my-skills h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.row-2 .my-skills .baris-my-skills {
+    position: relative;
+    /* top: 0%; */
+    bottom: 7.5%;
+    width: 100%;
+    background-color: black;
+    height: 2.5px;
+    border-radius: 80px;
+    /* margin-bottom: 10px; */
+}
+
+.row-2 .my-skills .skills-container .baris-html {
+    width: 500%;
+    background-color: rgb(254, 254, 254);
+    height: 10px;
+    margin-bottom: 10px;
+    margin-top: 2.5px;
+    border-radius: 80px;
+}
+
+.row-2 .my-skills .skills-container .baris-html .skill-html {
+    width: 86%;
+    background-color: red;
+    height: 10px;
+    border-radius: 80px;
+}
+
+.row-2 .my-skills .skills-container .baris-css {
+    width: 500%;
+    background-color: rgb(254, 254, 254);
+    height: 10px;
+    margin-bottom: 10px;
+    margin-top: 2.5px;
+    border-radius: 80px;
+}
+
+.row-2 .my-skills .skills-container .baris-css .skill-css {
+    width: 80%;
+    background-color: red;
+    height: 10px;
+    border-radius: 80px;
+}
+
+.row-2 .my-skills .skills-container .baris-js {
+    width: 500%;
+    background-color: rgb(254, 254, 254);
+    height: 10px;
+    margin-bottom: 10px;
+    margin-top: 2.5px;
+    border-radius: 80px;
+}
+
+.row-2 .my-skills .skills-container .baris-js .skill-js {
+    width: 70%;
+    background-color: red;
+    height: 10px;
+    border-radius: 80px;
+}
+
+.row-2 .my-skills .skills-container .baris-python {
+    width: 500%;
+    background-color: rgb(254, 254, 254);
+    height: 10px;
+    margin-bottom: 10px;
+    margin-top: 2.5px;
+    border-radius: 80px;
+}
+
+.row-2 .my-skills .skills-container .baris-python .skill-python {
+    width: 75%;
+    background-color: red;
+    height: 10px;
+    border-radius: 80px;
+}
+
+/* End About Page */
+
+
+/* Start footer*/
+footer {
+    background-color: rgb(230, 230, 230);
+    z-index: 2;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    height: 60px;
+    margin-top: 210px;
+}
+
+footer .col-1-footer {
+    display: flex;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 20px;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+footer .col-1-footer i {
+    margin-top: 3px;
+}
+
+footer .col-1-footer p {
+    margin-left: 10px;
+}
+
+footer .col-2-footer {
+    margin-left: 890px;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .col-2-footer i {
+    margin-left: 10px;
+    color: rgb(48, 47, 47);
+}
+/* End Footer */
+
+
+
+/* 14 Pro Mode */
+@media(max-width: 430px) {
+    /* Start Navbar */
+    .menu-buttom {
+       display: flex;
+   }
+
+   .hideOnMobile {
+       display: none;
+   }
+
+   .side-bar {
+       width: 100%;
+   }
+
+   nav .Logo {
+    margin-left: -40px;
+   }
+   /* End Navbar */
+
+   /* Start About Page */
+   .container {
+       display: flex;
+       flex-direction: column;
+       /* align-items: center; */
+       /* padding: 50px 0; */
+       position: relative;
+       left: 0;
+       top: 0;
+       font-family: 'Poppins', sans-serif;
+       /* background-color: rgb(176, 176, 176); */
+       /* min-height: 150dvh; */
+       /* width: 758px; */
+       z-index: 1;
+   }
+
+   .row-1 {
+       font-size: 15px;
+       text-align: center;
+   }
+
+   .row-2 {
+       display: block;
+   }
+
+   .row-2 .my-self {
+       margin-left: 40px;
+       position: relative;
+   }
+
+   .row-2 .my-self h2 {
+       font-size: 15px;
+   }
+
+   .row-2 .my-self .baris-my-self {
+       position: absolute;
+       top: 8%;
+       /* bottom: 30%; */
+       width: 17%;
+       background-color: black;
+       height: 2.5px;
+       border-radius: 80px;
+       /* margin-bottom: 50px; */
+   }
+
+   .row-2 .my-self p {
+       width: 365px;
+       opacity: 0.8;
+       font-size: 12px;
+       margin-bottom: 20px;
+       margin-right: 70px;
+       margin-top: 25px;
+   }
+
+   .row-2 .my-self .row-in-row-2 {
+       display: flex;
+   }
+   
+   .row-2 .my-self .row-in-row-2 button {
+       height: 30px;
+       width: auto; /* Lebar disesuaikan dengan panjang teks */
+       padding: 10px 20px; /* Padding vertikal dikurangi dan padding horizontal ditambahkan */
+       font-size: 10px; /* Ukuran font diperbesar untuk keterbacaan yang lebih baik */
+       border-radius: 20px;
+       cursor: pointer;
+       border: none; /* Border dihapus untuk tampilan yang lebih bersih */
+       color: white;
+       background-color: rgb(39, 38, 38);
+       transition: background-color 0.3s ease; /* Transisi ditambahkan untuk perubahan warna yang halus saat hover */
+       margin-right: 20px;
+   }
+   
+   .row-2 .my-self .row-in-row-2 button:hover {
+       background-color: rgb(59,58,58); /* Warna latar belakang yang lebih gelap saat hover */
+   }
+
+   .row-2 .my-self .row-in-row-2 .icon-medsos {
+       text-align: center;
+       height: 20px;
+       width: auto;
+       padding: 20px 30px;
+       font-size: 15px;
+       /* background-color: blue; */
+       margin-top: -15px;
+   }
+   
+   .row-2 .my-self .row-in-row-2 .icon-medsos a {
+       margin-right: 5px;
+       color: rgb(39, 38, 38);
+   }
+
+   .row-2 .my-skills {
+       margin-left: 40px;
+       position: relative;
+   }
+   
+   .row-2 .my-skills h2 {
+       font-size: 15px;
+       margin-bottom: 20px;
+       margin-top: 20px;
+   }
+   
+   .row-2 .my-skills .baris-my-skills {
+       position: absolute;
+       top: 10%;
+       /* bottom: 50%; */
+       width: 21%;
+       background-color: black;
+       height: 2.5px;
+       border-radius: 80px;
+       /* margin-bottom: 10px; */
+   }
+   
+   .row-2 .my-skills .skills-container .baris-html {
+       width: 80%;
+       background-color: rgb(254, 254, 254);
+       height: 10px;
+       margin-bottom: 10px;
+       margin-top: 2.5px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-html .skill-html {
+       width: 86%;
+       background-color: red;
+       height: 10px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-css {
+       width: 80%;
+       background-color: rgb(254, 254, 254);
+       height: 10px;
+       margin-bottom: 10px;
+       margin-top: 2.5px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-css .skill-css {
+       width: 80%;
+       background-color: red;
+       height: 10px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-js {
+       width: 80%;
+       background-color: rgb(254, 254, 254);
+       height: 10px;
+       margin-bottom: 10px;
+       margin-top: 2.5px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-js .skill-js {
+       width: 70%;
+       background-color: red;
+       height: 10px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-python {
+       width: 80%;
+       background-color: rgb(254, 254, 254);
+       height: 10px;
+       margin-bottom: 10px;
+       margin-top: 2.5px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-python .skill-python {
+       width: 75%;
+       background-color: red;
+       height: 10px;
+       border-radius: 80px;
+   }
+   /* End About Page */
+
+   /* Start footer*/
+   footer {
+       background-color: rgb(230, 230, 230);
+       z-index: 2;
+       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+       display: flex;
+       height: 60px;
+   }
+
+   footer .col-1-footer {
+       display: flex;
+       margin-right: 5%;
+       margin-left: 8%;
+       padding: 20px;
+       text-align: center;
+       font-size: 10px;
+       margin-top: 5px;
+       /* width: 200px; */
+   }
+
+   footer .col-1-footer i {
+       margin-top: 2px;
+   }
+
+   footer .col-1-footer p {
+       margin-left: -45px;
+       width: 200px;
+   }
+
+   footer .col-2-footer {
+       /* display: inline; */
+       margin-left: 5%;
+       padding: 18px;
+       text-align: center;
+   }
+
+   footer .col-2-footer i {
+       margin-left: 10px;
+       color: rgb(48, 47, 47);
+       font-size: 10px;
+   }
+   /* End Footer */
+}
+
+
+
+/* XR Mode */
+@media(max-width: 414px) {
+    /* Start Navbar */
+    .menu-buttom {
+       display: flex;
+   }
+
+   .hideOnMobile {
+       display: none;
+   }
+
+   .side-bar {
+       width: 100%;
+   }
+
+   nav .Logo {
+    margin-left: -40px;
+   }
+   /* End Navbar */
+
+   /* Start About Page */
+   .container {
+       display: flex;
+       flex-direction: column;
+       /* align-items: center; */
+       /* padding: 50px 0; */
+       position: relative;
+       left: 0;
+       top: 0;
+       font-family: 'Poppins', sans-serif;
+       /* background-color: rgb(176, 176, 176); */
+       /* min-height: 150dvh; */
+       /* width: 758px; */
+       z-index: 1;
+   }
+
+   .row-1 {
+       font-size: 15px;
+       text-align: center;
+   }
+
+   .row-2 {
+       display: block;
+   }
+
+   .row-2 .my-self {
+       margin-left: 40px;
+       position: relative;
+   }
+
+   .row-2 .my-self h2 {
+       font-size: 15px;
+   }
+
+   .row-2 .my-self .baris-my-self {
+       position: absolute;
+       top: 9%;
+       /* bottom: 30%; */
+       width: 17%;
+       background-color: black;
+       height: 2.5px;
+       border-radius: 80px;
+       /* margin-bottom: 50px; */
+   }
+
+   .row-2 .my-self p {
+       width: 350px;
+       opacity: 0.8;
+       font-size: 12px;
+       margin-bottom: 20px;
+       margin-right: 70px;
+       margin-top: 25px;
+   }
+
+   .row-2 .my-self .row-in-row-2 {
+       display: flex;
+   }
+   
+   .row-2 .my-self .row-in-row-2 button {
+       height: 30px;
+       width: auto; /* Lebar disesuaikan dengan panjang teks */
+       padding: 10px 20px; /* Padding vertikal dikurangi dan padding horizontal ditambahkan */
+       font-size: 10px; /* Ukuran font diperbesar untuk keterbacaan yang lebih baik */
+       border-radius: 20px;
+       cursor: pointer;
+       border: none; /* Border dihapus untuk tampilan yang lebih bersih */
+       color: white;
+       background-color: rgb(39, 38, 38);
+       transition: background-color 0.3s ease; /* Transisi ditambahkan untuk perubahan warna yang halus saat hover */
+       margin-right: 20px;
+   }
+   
+   .row-2 .my-self .row-in-row-2 button:hover {
+       background-color: rgb(59,58,58); /* Warna latar belakang yang lebih gelap saat hover */
+   }
+
+   .row-2 .my-self .row-in-row-2 .icon-medsos {
+       text-align: center;
+       height: 20px;
+       width: auto;
+       padding: 20px 30px;
+       font-size: 15px;
+       /* background-color: blue; */
+       margin-top: -15px;
+   }
+   
+   .row-2 .my-self .row-in-row-2 .icon-medsos a {
+       margin-right: 5px;
+       color: rgb(39, 38, 38);
+   }
+
+   .row-2 .my-skills {
+       margin-left: 40px;
+       position: relative;
+   }
+   
+   .row-2 .my-skills h2 {
+       font-size: 15px;
+       margin-bottom: 20px;
+       margin-top: 20px;
+   }
+   
+   .row-2 .my-skills .baris-my-skills {
+       position: absolute;
+       top: 10%;
+       /* bottom: 50%; */
+       width: 21%;
+       background-color: black;
+       height: 2.5px;
+       border-radius: 80px;
+       /* margin-bottom: 10px; */
+   }
+   
+   .row-2 .my-skills .skills-container .baris-html {
+       width: 80%;
+       background-color: rgb(254, 254, 254);
+       height: 10px;
+       margin-bottom: 10px;
+       margin-top: 2.5px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-html .skill-html {
+       width: 86%;
+       background-color: red;
+       height: 10px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-css {
+       width: 80%;
+       background-color: rgb(254, 254, 254);
+       height: 10px;
+       margin-bottom: 10px;
+       margin-top: 2.5px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-css .skill-css {
+       width: 80%;
+       background-color: red;
+       height: 10px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-js {
+       width: 80%;
+       background-color: rgb(254, 254, 254);
+       height: 10px;
+       margin-bottom: 10px;
+       margin-top: 2.5px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-js .skill-js {
+       width: 70%;
+       background-color: red;
+       height: 10px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-python {
+       width: 80%;
+       background-color: rgb(254, 254, 254);
+       height: 10px;
+       margin-bottom: 10px;
+       margin-top: 2.5px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-python .skill-python {
+       width: 75%;
+       background-color: red;
+       height: 10px;
+       border-radius: 80px;
+   }
+   /* End About Page */
+
+   /* Start footer*/
+    footer {
+        background-color: rgb(230, 230, 230);
+        z-index: 2;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        height: 60px;
+    }
+
+    footer .col-1-footer {
+        display: flex;
+        margin-right: 5%;
+        margin-left: 8%;
+        padding: 20px;
+        text-align: center;
+        font-size: 10px;
+        margin-top: 5px;
+        /* width: 200px; */
+    }
+
+    footer .col-1-footer i {
+        margin-top: 2px;
+    }
+
+    footer .col-1-footer p {
+        margin-left: -45px;
+        width: 200px;
+    }
+
+    footer .col-2-footer {
+        /* display: inline; */
+        margin-left: 3%;
+        padding: 18px;
+        text-align: center;
+    }
+
+    footer .col-2-footer i {
+        margin-left: 10px;
+        color: rgb(48, 47, 47);
+        font-size: 10px;
+    }
+    /* End Footer */
+}
+
+
+/* 12 Pro Mode */
+@media(max-width: 390px) {
+    /* Start Navbar */
+    .menu-buttom {
+       display: flex;
+   }
+
+   .hideOnMobile {
+       display: none;
+   }
+
+   .side-bar {
+       width: 100%;
+   }
+
+   nav .Logo {
+    margin-left: -40px;
+   }
+   /* End Navbar */
+
+   /* Start About Page */
+   .container {
+       display: flex;
+       flex-direction: column;
+       /* align-items: center; */
+       /* padding: 50px 0; */
+       position: relative;
+       left: 0;
+       top: 0;
+       font-family: 'Poppins', sans-serif;
+       /* background-color: rgb(176, 176, 176); */
+       /* min-height: 150dvh; */
+       /* width: 758px; */
+       z-index: 1;
+   }
+
+   .row-1 {
+       font-size: 15px;
+       text-align: center;
+   }
+
+   .row-2 {
+       display: block;
+   }
+
+   .row-2 .my-self {
+       margin-left: 40px;
+       position: relative;
+   }
+
+   .row-2 .my-self h2 {
+       font-size: 15px;
+   }
+
+   .row-2 .my-self .baris-my-self {
+       position: absolute;
+       top: 8%;
+       /* bottom: 30%; */
+       width: 17%;
+       background-color: black;
+       height: 2.5px;
+       border-radius: 80px;
+       /* margin-bottom: 50px; */
+   }
+
+   .row-2 .my-self p {
+       width: 315px;
+       opacity: 0.8;
+       font-size: 12px;
+       margin-bottom: 20px;
+       margin-right: 70px;
+       margin-top: 25px;
+   }
+
+   .row-2 .my-self .row-in-row-2 {
+       display: flex;
+   }
+   
+   .row-2 .my-self .row-in-row-2 button {
+       height: 30px;
+       width: auto; /* Lebar disesuaikan dengan panjang teks */
+       padding: 10px 20px; /* Padding vertikal dikurangi dan padding horizontal ditambahkan */
+       font-size: 10px; /* Ukuran font diperbesar untuk keterbacaan yang lebih baik */
+       border-radius: 20px;
+       cursor: pointer;
+       border: none; /* Border dihapus untuk tampilan yang lebih bersih */
+       color: white;
+       background-color: rgb(39, 38, 38);
+       transition: background-color 0.3s ease; /* Transisi ditambahkan untuk perubahan warna yang halus saat hover */
+       margin-right: 20px;
+   }
+   
+   .row-2 .my-self .row-in-row-2 button:hover {
+       background-color: rgb(59,58,58); /* Warna latar belakang yang lebih gelap saat hover */
+   }
+
+   .row-2 .my-self .row-in-row-2 .icon-medsos {
+       text-align: center;
+       height: 20px;
+       width: auto;
+       padding: 20px 30px;
+       font-size: 15px;
+       /* background-color: blue; */
+       margin-top: -15px;
+   }
+   
+   .row-2 .my-self .row-in-row-2 .icon-medsos a {
+       margin-right: 5px;
+       color: rgb(39, 38, 38);
+   }
+
+   .row-2 .my-skills {
+       margin-left: 40px;
+       position: relative;
+   }
+   
+   .row-2 .my-skills h2 {
+       font-size: 15px;
+       margin-bottom: 20px;
+       margin-top: 20px;
+   }
+   
+   .row-2 .my-skills .baris-my-skills {
+       position: absolute;
+       top: 10%;
+       /* bottom: 50%; */
+       width: 21%;
+       background-color: black;
+       height: 2.5px;
+       border-radius: 80px;
+       /* margin-bottom: 10px; */
+   }
+   
+   .row-2 .my-skills .skills-container .baris-html {
+       width: 80%;
+       background-color: rgb(254, 254, 254);
+       height: 10px;
+       margin-bottom: 10px;
+       margin-top: 2.5px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-html .skill-html {
+       width: 86%;
+       background-color: red;
+       height: 10px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-css {
+       width: 80%;
+       background-color: rgb(254, 254, 254);
+       height: 10px;
+       margin-bottom: 10px;
+       margin-top: 2.5px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-css .skill-css {
+       width: 80%;
+       background-color: red;
+       height: 10px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-js {
+       width: 80%;
+       background-color: rgb(254, 254, 254);
+       height: 10px;
+       margin-bottom: 10px;
+       margin-top: 2.5px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-js .skill-js {
+       width: 70%;
+       background-color: red;
+       height: 10px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-python {
+       width: 80%;
+       background-color: rgb(254, 254, 254);
+       height: 10px;
+       margin-bottom: 10px;
+       margin-top: 2.5px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-python .skill-python {
+       width: 75%;
+       background-color: red;
+       height: 10px;
+       border-radius: 80px;
+   }
+   /* End About Page */
+
+   /* Start footer*/
+   footer {
+       background-color: rgb(230, 230, 230);
+       z-index: 2;
+       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+       display: flex;
+       height: 60px;
+   }
+
+   footer .col-1-footer {
+       display: flex;
+       margin-right: 5%;
+       margin-left: 8%;
+       padding: 20px;
+       text-align: center;
+       font-size: 10px;
+       margin-top: 5px;
+       /* width: 200px; */
+   }
+
+   footer .col-1-footer i {
+       margin-top: 2px;
+   }
+
+   footer .col-1-footer p {
+       margin-left: -45px;
+       width: 200px;
+   }
+
+   footer .col-2-footer {
+       /* display: inline; */
+       margin-left: 0%;
+       padding: 18px;
+       text-align: center;
+   }
+
+   footer .col-2-footer i {
+       margin-left: 10px;
+       color: rgb(48, 47, 47);
+       font-size: 10px;
+   }
+   /* End Footer */
+}
+
+
+/* SE Mode */
+@media(max-width: 375px) {
+     /* Start Navbar */
+     .menu-buttom {
+        display: flex;
+    }
+
+    .hideOnMobile {
+        display: none;
+    }
+
+    .side-bar {
+        width: 100%;
+    }
+
+    nav .Logo {
+        margin-left: -40px;
+    }
+    /* End Navbar */
+
+    /* Start About Page */
+    .container {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* padding: 50px 0; */
+        position: relative;
+        left: 0;
+        top: 0;
+        font-family: 'Poppins', sans-serif;
+        /* background-color: rgb(176, 176, 176); */
+        /* min-height: 150dvh; */
+        /* width: 758px; */
+        z-index: 1;
+    }
+
+    .row-1 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .row-2 {
+        display: block;
+    }
+
+    .row-2 .my-self {
+        margin-left: 40px;
+        position: relative;
+    }
+
+    .row-2 .my-self h2 {
+        font-size: 15px;
+    }
+
+    .row-2 .my-self .baris-my-self {
+        position: absolute;
+        top: 7.5%;
+        /* bottom: 30%; */
+        width: 17%;
+        background-color: black;
+        height: 2.5px;
+        border-radius: 80px;
+        /* margin-bottom: 50px; */
+    }
+
+    .row-2 .my-self p {
+        width: 280px;
+        opacity: 0.8;
+        font-size: 12px;
+        margin-bottom: 20px;
+        margin-right: 70px;
+        margin-top: 25px;
+    }
+
+    .row-2 .my-self .row-in-row-2 {
+        display: flex;
+    }
+    
+    .row-2 .my-self .row-in-row-2 button {
+        height: 30px;
+        width: auto; /* Lebar disesuaikan dengan panjang teks */
+        padding: 10px 20px; /* Padding vertikal dikurangi dan padding horizontal ditambahkan */
+        font-size: 10px; /* Ukuran font diperbesar untuk keterbacaan yang lebih baik */
+        border-radius: 20px;
+        cursor: pointer;
+        border: none; /* Border dihapus untuk tampilan yang lebih bersih */
+        color: white;
+        background-color: rgb(39, 38, 38);
+        transition: background-color 0.3s ease; /* Transisi ditambahkan untuk perubahan warna yang halus saat hover */
+        margin-right: 20px;
+    }
+    
+    .row-2 .my-self .row-in-row-2 button:hover {
+        background-color: rgb(59,58,58); /* Warna latar belakang yang lebih gelap saat hover */
+    }
+
+    .row-2 .my-self .row-in-row-2 .icon-medsos {
+        text-align: center;
+        height: 20px;
+        width: auto;
+        padding: 20px 30px;
+        font-size: 15px;
+        /* background-color: blue; */
+        margin-top: -15px;
+    }
+    
+    .row-2 .my-self .row-in-row-2 .icon-medsos a {
+        margin-right: 5px;
+        color: rgb(39, 38, 38);
+    }
+
+    .row-2 .my-skills {
+        margin-left: 40px;
+        position: relative;
+    }
+    
+    .row-2 .my-skills h2 {
+        font-size: 15px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    .row-2 .my-skills .baris-my-skills {
+        position: absolute;
+        top: 10%;
+        /* bottom: 50%; */
+        width: 21%;
+        background-color: black;
+        height: 2.5px;
+        border-radius: 80px;
+        /* margin-bottom: 10px; */
+    }
+    
+    .row-2 .my-skills .skills-container .baris-html {
+        width: 80%;
+        background-color: rgb(254, 254, 254);
+        height: 10px;
+        margin-bottom: 10px;
+        margin-top: 2.5px;
+        border-radius: 80px;
+    }
+    
+    .row-2 .my-skills .skills-container .baris-html .skill-html {
+        width: 86%;
+        background-color: red;
+        height: 10px;
+        border-radius: 80px;
+    }
+    
+    .row-2 .my-skills .skills-container .baris-css {
+        width: 80%;
+        background-color: rgb(254, 254, 254);
+        height: 10px;
+        margin-bottom: 10px;
+        margin-top: 2.5px;
+        border-radius: 80px;
+    }
+    
+    .row-2 .my-skills .skills-container .baris-css .skill-css {
+        width: 80%;
+        background-color: red;
+        height: 10px;
+        border-radius: 80px;
+    }
+    
+    .row-2 .my-skills .skills-container .baris-js {
+        width: 80%;
+        background-color: rgb(254, 254, 254);
+        height: 10px;
+        margin-bottom: 10px;
+        margin-top: 2.5px;
+        border-radius: 80px;
+    }
+    
+    .row-2 .my-skills .skills-container .baris-js .skill-js {
+        width: 70%;
+        background-color: red;
+        height: 10px;
+        border-radius: 80px;
+    }
+    
+    .row-2 .my-skills .skills-container .baris-python {
+        width: 80%;
+        background-color: rgb(254, 254, 254);
+        height: 10px;
+        margin-bottom: 10px;
+        margin-top: 2.5px;
+        border-radius: 80px;
+    }
+    
+    .row-2 .my-skills .skills-container .baris-python .skill-python {
+        width: 75%;
+        background-color: red;
+        height: 10px;
+        border-radius: 80px;
+    }
+    /* End About Page */
+
+    /* Start footer*/
+    footer {
+        background-color: rgb(230, 230, 230);
+        z-index: 2;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        height: 60px;
+    }
+
+    footer .col-1-footer {
+        display: flex;
+        margin-right: 5%;
+        margin-left: 8%;
+        padding: 20px;
+        text-align: center;
+        font-size: 10px;
+        margin-top: 5px;
+        /* width: 200px; */
+    }
+
+    footer .col-1-footer i {
+        margin-top: 2px;
+    }
+
+    footer .col-1-footer p {
+        margin-left: -45px;
+        width: 200px;
+    }
+
+    footer .col-2-footer {
+        /* display: inline; */
+        margin-left: -5%;
+        padding: 18px;
+        text-align: center;
+    }
+
+    footer .col-2-footer i {
+        margin-left: 10px;
+        color: rgb(48, 47, 47);
+        font-size: 10px;
+    }
+    /* End Footer */
+}
+
+
+
+/* S8+ Mode */
+@media(max-width: 360px) {
+    /* Start Navbar */
+    .menu-buttom {
+       display: flex;
+   }
+
+   .hideOnMobile {
+       display: none;
+   }
+
+   .side-bar {
+       width: 100%;
+   }
+
+   /* nav .Logo {
+    margin-left: -40px;
+   }
+    */
+   /* End Navbar */
+
+   /* Start About Page */
+   .container {
+       display: flex;
+       flex-direction: column;
+       /* align-items: center; */
+       /* padding: 50px 0; */
+       position: relative;
+       left: 0;
+       top: 0;
+       font-family: 'Poppins', sans-serif;
+       /* background-color: rgb(176, 176, 176); */
+       /* min-height: 150dvh; */
+       /* width: 758px; */
+       z-index: 1;
+   }
+
+   .row-1 {
+       font-size: 15px;
+       text-align: center;
+   }
+
+   .row-2 {
+       display: block;
+   }
+
+   .row-2 .my-self {
+       margin-left: 28px;
+       position: relative;
+   }
+
+   .row-2 .my-self h2 {
+       font-size: 15px;
+   }
+
+   .row-2 .my-self .baris-my-self {
+       position: absolute;
+       top: 8%;
+       /* bottom: 30%; */
+       width: 17%;
+       background-color: black;
+       height: 2.5px;
+       border-radius: 80px;
+       /* margin-bottom: 50px; */
+   }
+
+   .row-2 .my-self p {
+       width: 325px;
+       opacity: 0.8;
+       font-size: 12px;
+       margin-bottom: 20px;
+       margin-right: 70px;
+       margin-top: 25px;
+   }
+
+   .row-2 .my-self .row-in-row-2 {
+       display: flex;
+   }
+   
+   .row-2 .my-self .row-in-row-2 button {
+       height: 30px;
+       width: auto; /* Lebar disesuaikan dengan panjang teks */
+       padding: 10px 20px; /* Padding vertikal dikurangi dan padding horizontal ditambahkan */
+       font-size: 10px; /* Ukuran font diperbesar untuk keterbacaan yang lebih baik */
+       border-radius: 20px;
+       cursor: pointer;
+       border: none; /* Border dihapus untuk tampilan yang lebih bersih */
+       color: white;
+       background-color: rgb(39, 38, 38);
+       transition: background-color 0.3s ease; /* Transisi ditambahkan untuk perubahan warna yang halus saat hover */
+       margin-right: 20px;
+   }
+   
+   .row-2 .my-self .row-in-row-2 button:hover {
+       background-color: rgb(59,58,58); /* Warna latar belakang yang lebih gelap saat hover */
+   }
+
+   .row-2 .my-self .row-in-row-2 .icon-medsos {
+       text-align: center;
+       height: 20px;
+       width: auto;
+       padding: 20px 30px;
+       font-size: 15px;
+       /* background-color: blue; */
+       margin-top: -15px;
+   }
+   
+   .row-2 .my-self .row-in-row-2 .icon-medsos a {
+       margin-right: 5px;
+       color: rgb(39, 38, 38);
+   }
+
+   .row-2 .my-skills {
+       margin-left: 28px;
+       position: relative;
+   }
+   
+   .row-2 .my-skills h2 {
+       font-size: 15px;
+       margin-bottom: 20px;
+       margin-top: 20px;
+   }
+   
+   .row-2 .my-skills .baris-my-skills {
+       position: absolute;
+       top: 10%;
+       /* bottom: 50%; */
+       width: 21%;
+       background-color: black;
+       height: 2.5px;
+       border-radius: 80px;
+       /* margin-bottom: 10px; */
+   }
+   
+   .row-2 .my-skills .skills-container .baris-html {
+       width: 80%;
+       background-color: rgb(254, 254, 254);
+       height: 10px;
+       margin-bottom: 10px;
+       margin-top: 2.5px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-html .skill-html {
+       width: 86%;
+       background-color: red;
+       height: 10px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-css {
+       width: 80%;
+       background-color: rgb(254, 254, 254);
+       height: 10px;
+       margin-bottom: 10px;
+       margin-top: 2.5px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-css .skill-css {
+       width: 80%;
+       background-color: red;
+       height: 10px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-js {
+       width: 80%;
+       background-color: rgb(254, 254, 254);
+       height: 10px;
+       margin-bottom: 10px;
+       margin-top: 2.5px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-js .skill-js {
+       width: 70%;
+       background-color: red;
+       height: 10px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-python {
+       width: 80%;
+       background-color: rgb(254, 254, 254);
+       height: 10px;
+       margin-bottom: 10px;
+       margin-top: 2.5px;
+       border-radius: 80px;
+   }
+   
+   .row-2 .my-skills .skills-container .baris-python .skill-python {
+       width: 75%;
+       background-color: red;
+       height: 10px;
+       border-radius: 80px;
+   }
+   /* End About Page */
+
+   /* Start footer*/
+   footer {
+       background-color: rgb(230, 230, 230);
+       z-index: 2;
+       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+       display: flex;
+       height: 60px;
+   }
+
+   footer .col-1-footer {
+       display: flex;
+       margin-right: 5%;
+       margin-left: 8%;
+       padding: 20px;
+       text-align: center;
+       font-size: 10px;
+       margin-top: 5px;
+       /* width: 200px; */
+   }
+
+   footer .col-1-footer i {
+       margin-top: 2px;
+   }
+
+   footer .col-1-footer p {
+       margin-left: -45px;
+       width: 200px;
+   }
+
+   footer .col-2-footer {
+       /* display: inline; */
+       margin-left: -10%;
+       padding: 18px;
+       text-align: center;
+   }
+
+   footer .col-2-footer i {
+       margin-left: 10px;
+       color: rgb(48, 47, 47);
+       font-size: 10px;
+   }
+   /* End Footer */
+}
